@@ -287,4 +287,29 @@ b, strong {
 	}
 }
 
+.we-offer {
+	position: relative;
+	padding-top: 50px;
+	.right-ellipse {
+		position: absolute;
+		right: 0px;
+		top: 85px;
+	}
+	.item {
+		text-align: center;
+		margin-top: 95px;
+		.offer-logo {
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 15px;
+		}
+		.desc {
+			font-size: 15px;
+			line-height: 16px;
+			color: #272f2f;
+			text-transform: uppercase;
+		}
+	}
+}
+
 @import "media"; 
