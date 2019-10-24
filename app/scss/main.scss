@@ -11,6 +11,11 @@
 	color: #fff;
 }
 
+.input {
+	outline: none;
+	border: none;
+}
+
 body {
 	font-size: 16px;
 	min-width: 320px;
@@ -46,6 +51,181 @@ body {
 
 b, strong {
 	font-weight: bold;
+}
+
+.container {
+	max-width: 840px;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #272f2f;
+	font-weight: normal;
+	text-align: center;
+}
+
+.header {
+	.head-bg {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+	.head-logo {
+		position: relative;
+		top: 80px;
+		left: -57px;
+	}
+	.nav {
+		text-align: right;
+		margin-top: 22px;
+		.item {
+			font-size: 13px;
+			color: #ffffff;
+			text-decoration: none;
+			text-transform: uppercase;
+			margin-left: 28px;
+		}
+	}
+}
+
+.sent-request {
+	form {
+		width: 240px;
+		margin-top: 195px;
+		position: relative;
+		left: -25px;
+	}
+
+	h2 {
+		margin-bottom: 48px;
+	}
+	  
+	.wrap-input {
+		width: 100%;
+		position: relative;
+		border-bottom: 2px solid #31cfb5;
+		margin-top: 45px;
+	}
+	  
+	.input {
+		font-size: 11px;
+		color: #272f2f;
+		display: block;
+		width: 100%;
+		height: 20px;
+		background: transparent;
+		padding: 0 5px;
+	}
+	
+	.focus-input {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		pointer-events: none;
+	}
+	  
+	.focus-input::before {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		width: 0;
+		height: 2px;
+		-webkit-transition: all 0.4s;
+		-o-transition: all 0.4s;
+		-moz-transition: all 0.4s;
+		transition: all 0.4s;
+		background: #57b846;
+	}
+	  
+	.focus-input::after {
+		font-size: 11px;
+		color: #434949;
+		content: attr(data-placeholder);
+		display: block;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		padding-left: 5px;
+		-webkit-transition: all 0.5s;
+		-o-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		transition: all 0.5;
+	}
+	  
+	.input:focus + .focus-input::after {
+		top: -15px;
+		font-size: 10px;
+		text-transform: uppercase;
+		color: #1db8a4;
+	}
+
+	.has-val.input + .focus-input::after {
+		top: -15px;
+		font-size: 10px;
+		text-transform: uppercase;
+		color: #1db8a4;
+	}
+	
+	.btn {
+		display: block;
+		width: 173px;
+		padding: 10px 0;
+		border-radius: 4px;
+		background-image: linear-gradient(49deg, #fb6a4e 0%, #ff606a 100%);
+		color: #ffffff;
+		font-size: 13px;
+		text-decoration: none;
+		margin: 0 auto;
+		margin-top: 35px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.head-logo {
+		position: relative;
+		top: 80px;
+		left: 10px;
+	}
+}
+
+.our-requirement {
+	margin-top: 260px;
+	position: relative;
+	.left-elipse-img {
+		position: absolute;
+		top: -165px;
+		left: -15px;
+	}
+}
+
+.requirement-elm {
+	width: 199px;
+	height: 204px;
+	border-radius: 7px;
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(199,199,199,0.47);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(199,199,199,0.47);
+	box-shadow: 0px 0px 15px 5px rgba(199,199,199,0.47);
+	background-color: #fafafa;
+	line-height: 16px;
+	padding: 0 17px;
+	margin-top: 65px;
+	.img {
+		text-align: center;
+		padding-top: 25px;
+		padding-bottom: 10px;
+	}
+	.descript {
+		font-size: 10px;
+		color: #272f2f;
+		line-height: 10px;
+	}
 }
 
 @import "media"; 
