@@ -257,17 +257,21 @@ form {
 	}
 	.item {
 		text-align: center;
-		margin-top: 95px;
-		.offer-logo {
-			display: block;
-			margin: 0 auto;
-			margin-bottom: 15px;
+		font-weight: 600;
+		margin-top: 60px;
+		svg {
+			width: 50%;
+			fill: #04a58b;
+			cursor: pointer;
+			&:hover {
+				width: 60%;
+				fill: url(#my-cool-gradient);
+			}
 		}
 		.desc {
-			font-size: 15px;
+			display: block;
+			padding-top: 10px;
 			line-height: 16px;
-			color: #272f2f;
-			text-transform: uppercase;
 		}
 	}
 }
@@ -317,10 +321,18 @@ form {
 	.soc-icon {
 		margin-top: 58px;
 		a {
-			margin-right: 25px;
-		}
-		img {
+			display: inline-block;
 			width: 20px;
+			height: 20px;
+			margin-right: 40px;
+			svg {
+				width: 100%;
+				height: 100%;
+				fill: #04a58b;
+				&:hover {
+					fill: darken(#04a58b, 5%)
+				}
+			}
 		}
 	}
 }
@@ -332,5 +344,6 @@ form {
 	font-size: 13px;
 	padding: 15px;
 }
+
 
 @import "media"; 
