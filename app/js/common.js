@@ -14,6 +14,20 @@ $(function () {
 });
 
 $(function() {
+
+	$('.menu-icon').on('click', function() {
+		$(this).closest('.menu')
+			.toggleClass('menu_state_open');
+	});
+
+	$('.item').on('click', function() {
+		$(this).closest('.menu')
+		.removeClass('menu_state_open');
+	});
+
+});
+
+$(function() {
 	$('a[href*="#"]').bind('click', function(e) {
 		e.preventDefault();
 

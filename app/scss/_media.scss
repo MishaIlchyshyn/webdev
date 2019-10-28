@@ -10,12 +10,63 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
-
+    .header {
+        .head-bg {
+            display: none;
+        }
+        .menu {
+            .menu-icon {
+                display: inline-block;
+            }
+            .menu-links {
+                display: none;
+                background: #1ebcaa;
+                .item {
+                    display: block;
+                    text-align: center;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+    .sent-request {
+        form {
+            margin: 0 auto;
+            width: 400px;
+            margin-top: 140px;
+            position: unset;
+        }
+        .head-logo {
+            display: block;
+            margin: 0 auto;
+            top: 130px;
+            width: 60%;
+            left: 0;
+        }
+    }
+    .help {
+        .help-icon {
+            opacity: 0.2;
+            width: 85%;
+            height: 100%;
+        }
+        .contain {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-
+    .help {
+        .help-icon {
+            width: 100%;
+        }
+        .contain {
+            width: 85%;
+        }
+    }
 }
 
 // ≥576px
@@ -38,7 +89,7 @@
 
 // ≤992px
 @include media-breakpoint-up(lg) {
-
+   
 }
 
 // ≤1200px

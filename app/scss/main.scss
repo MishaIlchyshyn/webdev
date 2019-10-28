@@ -141,16 +141,73 @@ form {
 		position: absolute;
 		top: 0px;
 		right: 0px;
+		width: 71%;
 	}
-	.nav {
+	.menu {
 		text-align: right;
 		margin-top: 22px;
-		.item {
-			font-size: 13px;
-			color: #ffffff;
-			text-transform: uppercase;
-			margin-left: 28px;
+		.menu-icon {
+			display: none;
+			width: 45px;
+			height: 35px;
+			position: relative;
+			cursor: pointer;
+			span {
+				display: block;
+				position: absolute;
+				height: 9px;
+				width: 100%;
+				background: #333333;
+				border-radius: 9px;
+				opacity: 1;
+				left: 0;
+				transform: rotate(0deg);
+				transition: .25s ease-in-out;
+				&:nth-child(1) {
+					top: 0px;
+				}
+				&:nth-child(2) {
+					top: 13px;
+				}
+				&:nth-child(3) {
+					top: 13px;
+				}
+				&:nth-child(4) {
+					top: 26px;
+				}
+			}
 		}
+		.menu-links{
+			.item {
+				font-size: 13px;
+				color: #ffffff;
+				text-transform: uppercase;
+				margin-left: 28px;
+			}
+		}
+	}
+	.menu.menu_state_open .menu-icon span:nth-child(1) {
+		top: 18px;
+		width: 0%;
+		left: 50%;
+	}
+	  
+	.menu.menu_state_open .menu-icon span:nth-child(2) {
+		transform: rotate(45deg);
+	}
+	  
+	.menu.menu_state_open  .menu-icon span:nth-child(3) {
+		transform: rotate(-45deg);
+	}
+	  
+	.menu.menu_state_open  .menu-icon span:nth-child(4) {
+		top: 18px;
+		width: 0%;
+		left: 50%;
+	}
+	  
+	.menu.menu_state_open .menu-links {
+		display: block;  
 	}
 }
 
@@ -159,6 +216,7 @@ form {
 		position: relative;
 		top: 80px;
 		left: 10px;
+		width: 106%;
 	}
 	form {
 		top: 145px;
@@ -184,6 +242,7 @@ form {
 		background-color: #fafafa;
 		line-height: 14px;
 		padding: 0 17px;
+		margin: auto;
 		margin-top: 65px;
 		.img {
 			text-align: center;
@@ -219,30 +278,32 @@ form {
 		color: #ffffff;
 		padding: 15px 0px 50px 15px;
 	}
-	.item {
-		position: relative;
-		color: #ffffff;
-		font-weight: 600;
-		&:nth-child(2n) {
-			margin-left: 75px;
-		}
-		&:not(:last-child) {
-			padding-bottom: 75px;
-		}
-		.number {
-			position: absolute;
-			left: 0;
-			top: 0;
-			.numeric, .dot {
-				font-size: 46px;
-				line-height: 1;
+	.contain {
+		.item {
+			position: relative;
+			color: #ffffff;
+			font-weight: 600;
+			&:nth-child(2n) {
+				margin-left: 75px;
 			}
-		}
-		.description {
-			line-height: 18px;
-			text-transform: uppercase;
-			font-size: 12px;
-			padding-left: 70px;
+			&:not(:last-child) {
+				padding-bottom: 75px;
+			}
+			.number {
+				position: absolute;
+				left: 0;
+				top: 0;
+				.numeric, .dot {
+					font-size: 46px;
+					line-height: 1;
+				}
+			}
+			.description {
+				line-height: 18px;
+				text-transform: uppercase;
+				font-size: 12px;
+				padding-left: 70px;
+			}
 		}
 	}
 }
@@ -285,6 +346,8 @@ form {
 		top: 0;
 		left: 0;
 		z-index: -1;
+		width: 100%;
+		height: 1090px;
 	}
 	.title {
 		margin-top: 145px;
