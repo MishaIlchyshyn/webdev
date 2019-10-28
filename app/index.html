@@ -10,34 +10,372 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<!-- Template Basic Images End -->
-	
+
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
+	<link href="https://fonts.googleapis.com/css?family=Coming+Soon&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
 	<link rel="stylesheet" href="css/main.min.css">
-
+	<script src="https://kit.fontawesome.com/5c8f90f3d4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-	<div class="container">
+	<section class="header" id="home">
+		<img src="./img/head-bg.png" class="head-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="menu">
+						<div class="menu-icon">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 
-		<div class="row">
-
-			<h1>hello webdev</h1>
-			
+						<div class="menu-links">
+							<a href="#home" class="item">Home</a>
+							<a href="#our-requirement" class="item">Our Requirement</a>
+							<a href="#help" class="item">Help</a>
+							<a href="#we-offer" class="item">We offer</a>
+							<a href="#contacts" class="item">Contacts</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+	</section>
 
-	</div>
+	<section class="sent-request">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-12">
+					<form action="">
+						<h2 class="title">Sent Request</h2>
+
+						<div class="wrap-input">
+							<input class="input" type="text" name="username">
+							<span class="focus-input" data-placeholder="Input your name"></span>
+						</div>
+						<div class="wrap-input">
+							<input class="input" type="text" name="email">
+							<span class="focus-input" data-placeholder="Input email"></span>
+						</div>
+
+						<a href="#" class="btn">Sent</a>
+					</form>
+				</div>
+				<div class="col-lg-7 col-md-12">
+					<img src="./img/head-logo.png" class="head-logo">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="our-requirement" id="our-requirement">
+		<img src="./img/left-ellipse.png" class="left-elipse-img">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="title">Our Requriment</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-4">
+					<div class="requirement-elm">
+						<div class="img">
+							<img src="./img/our-requirement/1.png" alt="icon">
+						</div>
+						<span class="descript">
+							Front end - HTML5 and CSS3 are main technology of the UI code
+							CSS3 can replace JS in many
+						</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4">
+					<div class="requirement-elm">
+						<div class="img">
+							<img src="./img/our-requirement/2.png" alt="icon">
+						</div>
+						<span class="descript">
+							Pixel-Perfect level of UI - must be accurate on pixel level to PSD design
+						</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4">
+					<div class="requirement-elm">
+						<div class="img">
+							<img src="./img/our-requirement/3.png" alt="icon3">
+						</div>
+						<span class="descript">
+							Cannot be any copyright mark, link, name, signature, email, Images
+							in any of the code files, files names, project images and any other
+							project asset
+						</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4">
+					<div class="requirement-elm">
+						<div class="img">
+							<img src="./img/our-requirement/4.png" alt="icon">
+						</div>
+						<span class="descript">
+							Front end - HTML5 and CSS3 are main technology of the UI code
+							CSS3 can replace JS in many
+						</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4">
+					<div class="requirement-elm">
+						<div class="img">
+							<img src="./img/our-requirement/5.png" alt="icon">
+						</div>
+						<span class="descript">
+							Front end - HTML5 and CSS3 are main technology of the UI code
+							CSS3 can replace JS in many
+						</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4">
+					<div class="requirement-elm">
+						<div class="img">
+							<img src="./img/our-requirement/6.png" alt="icon">
+						</div>
+						<span class="descript">
+							Front end - HTML5 and CSS3 are main technology of the UI code
+							CSS3 can replace JS in many
+						</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4">
+					<div class="requirement-elm">
+						<div class="img">
+							<img src="./img/our-requirement/7.png" alt="icon">
+						</div>
+						<span class="descript">
+							Front end - HTML5 and CSS3 are main technology of the UI code
+							CSS3 can replace JS in many
+						</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4">
+					<div class="requirement-elm">
+						<div class="img">
+							<img src="./img/our-requirement/8.png" alt="icon">
+						</div>
+						<span class="descript">
+							Front end - HTML5 and CSS3 are main technology of the UI code
+							CSS3 can replace JS in many
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="help" id="help">
+		<img src="./img/section-help-img.png" class="help-icon">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="title">Help</h2>
+				</div>
+			</div>
+			<div class="row justify-content-end">
+				<div class="col-lg-6 col-md-12">
+					<div class="contain">
+						<div class="item">
+							<div class="number">
+								<span class="numeric">1</span>
+								<span class="dot">.</span>
+							</div>
+							<div class="description">
+								<span>Clean, robust, dynamic & organiz</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="number">
+								<span class="numeric">2</span>
+								<span class="dot">.</span>
+							</div>
+							<div class="description">
+								<span>Clean, robust, dynamic & organized
+									code are essentials!</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="number">
+								<span class="numeric">3</span>
+								<span class="dot">.</span>
+							</div>
+							<div class="description">
+								<span>File names need to be clear and logic.
+									Back-end files and folders organization - Images, CSS, JS, Fonts,</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="number">
+								<span class="numeric">4</span>
+								<span class="dot">.</span>
+							</div>
+							<div class="description">
+								<span>Use hover effects, animations and fields validations (e.g. emails, ID,
+									names, phones, etc..) where possible, keep in mind that sometimes the designers
+									forget to create them.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="we-offer" id="we-offer">
+		<img src="./img/right-ellipse.png" class="right-ellipse">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="title">We Offer:</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="item">
+						<svg class="icon-friend">
+							<use xlink:href="img/symbol-defs.svg#icon-high-five"></use>
+						</svg>
+						<span class="desc">Career growth</span>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="item">
+						<svg class="icon-exit">
+							<use xlink:href="img/symbol-defs.svg#icon-exit"></use>
+						</svg>
+						<span class="desc">Flexible working schedule</span>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="item">
+						<svg class="icon-workplace">
+							<use xlink:href="img/symbol-defs.svg#icon-workplace"></use>
+						</svg>
+						<span class="desc">Comfortable workplace</span>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="item">
+						<svg class="icon-friend">
+							<use xlink:href="img/symbol-defs.svg#icon-high-five"></use>
+						</svg>
+						<span class="desc">Competitive salary according to the qualifications</span>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="item">
+						<svg class="icon-friend">
+							<use xlink:href="img/symbol-defs.svg#icon-high-five"></use>
+						</svg>
+						<span class="desc">Career growth</span>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="item">
+						<svg class="icon-classroom">
+							<use xlink:href="img/symbol-defs.svg#icon-classroom"></use>
+						</svg>
+						<span class="desc">Career growth</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts" id="contacts">
+		<img src="./img/contacts-bg.png" class="contacts-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="title">Contacts</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-8 col-md-6 col-sm-6">
+					<form action="">
+						<h2 class="title-contacts">Sent Request</h2>
+
+						<div class="wrap-input">
+							<input class="input" type="text" name="username">
+							<span class="focus-input" data-placeholder="Input your name"></span>
+						</div>
+						<div class="wrap-input">
+							<input class="input" type="text" name="email">
+							<span class="focus-input" data-placeholder="Input email"></span>
+						</div>
+
+						<a href="#" class="btn">Sent</a>
+					</form>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<h2 class="title-contacts">Get in touch</h2>
+					<div class="info">
+						<span>Ukraine, Lviv</span>
+						<span>Telephone: +380509214381</span>
+						<span style="text-transform: none;">E-mail: pecodesoftware@gmail.com</span>
+					</div>
+					<div class="soc-icon">
+						<a href="#">
+							<svg class="icon-linkedin">
+								<use xlink:href="img/symbol-defs.svg#icon-linkedin"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg class="icon-twitter">
+								<use xlink:href="img/symbol-defs.svg#icon-twitter"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg class="icon-facebook">
+								<use xlink:href="img/symbol-defs.svg#icon-facebook"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="maps">
+		<div id="myMap" style="width:100%;height:430px;"></div>
+	</section>
+
+	<section class="footer">
+		<span>Created by Ilchyshyn Misha</span>
+	</section>
+
+	<svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+		<linearGradient id="my-cool-gradient" x2="1" y2="1">
+			<stop offset="0%" stop-color="#fb6a4e" />
+			<stop offset="100%" stop-color="#ff606a" />
+		</linearGradient>
+	</svg>
 
 	<script src="js/scripts.min.js"></script>
 
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZOUKJTgy-COXURtRXnta8Yf4U7MQltw4&callback=initMap"
+		async defer>
+		</script>
+
 </body>
+
 </html>

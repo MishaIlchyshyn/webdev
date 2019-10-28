@@ -11,6 +11,11 @@
 	color: #fff;
 }
 
+.input {
+	outline: none;
+	border: none;
+}
+
 body {
 	font-size: 16px;
 	min-width: 320px;
@@ -19,6 +24,7 @@ body {
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: $text;
+	font-family: 'Coming Soon', cursive;
 	input, textarea {
 		border: #666 1px solid;
 		outline: none;
@@ -47,5 +53,360 @@ body {
 b, strong {
 	font-weight: bold;
 }
+
+.container {
+	max-width: 840px;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #272f2f;
+	font-weight: 600;
+	text-align: center;
+}
+
+form {
+	width: 240px;
+	position: relative;
+	.title {
+		margin-bottom: 48px;
+	}
+	.wrap-input {
+		width: 100%;
+		position: relative;
+		border-bottom: 2px solid #31cfb5;
+		margin-top: 45px;
+		.input {
+			font-size: 11px;
+			color: #272f2f;
+			display: block;
+			width: 100%;
+			height: 20px;
+			padding: 0 5px;
+			background: transparent;
+		}
+		.focus-input {
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			pointer-events: none;
+			&:after {
+				content: attr(data-placeholder);
+				font-size: 11px;
+				color: #434949;
+				position: absolute;
+				top: 0px;
+				left: 5px;
+				-webkit-transition: all 0.5s;
+				-o-transition: all 0.5s;
+				-moz-transition: all 0.5s;
+				transition: all 0.5;
+			}
+		} 
+	}
+	.input:focus + .focus-input, .has-val.input + .focus-input {
+		&:after {
+			top: -15px;
+			font-size: 10px;
+			text-transform: uppercase;
+			color: #1db8a4;
+			opacity: 1;
+		}
+	}
+	.btn {
+		display: block;
+		width: 173px;
+		padding: 10px 0;
+		border-radius: 4px;
+		background-image: linear-gradient(49deg, #fb6a4e 0%, #ff606a 100%);
+		color: #ffffff;
+		font-size: 13px;
+		text-decoration: none;
+		margin: 0 auto;
+		margin-top: 35px;
+		text-align: center;
+		text-transform: uppercase;
+		&:hover {
+			background-image: linear-gradient(49deg,#f3583a 0,#e83b46 100%)
+		}
+	}
+}
+
+.header {
+	.head-bg {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 71%;
+	}
+	.menu {
+		text-align: right;
+		margin-top: 22px;
+		.menu-icon {
+			display: none;
+			width: 45px;
+			height: 35px;
+			position: relative;
+			cursor: pointer;
+			span {
+				display: block;
+				position: absolute;
+				height: 9px;
+				width: 100%;
+				background: #333333;
+				border-radius: 9px;
+				opacity: 1;
+				left: 0;
+				transform: rotate(0deg);
+				transition: .25s ease-in-out;
+				&:nth-child(1) {
+					top: 0px;
+				}
+				&:nth-child(2) {
+					top: 13px;
+				}
+				&:nth-child(3) {
+					top: 13px;
+				}
+				&:nth-child(4) {
+					top: 26px;
+				}
+			}
+		}
+		.menu-links{
+			.item {
+				font-size: 13px;
+				color: #ffffff;
+				text-transform: uppercase;
+				margin-left: 28px;
+			}
+		}
+	}
+	.menu.menu_state_open .menu-icon span:nth-child(1) {
+		top: 18px;
+		width: 0%;
+		left: 50%;
+	}
+	  
+	.menu.menu_state_open .menu-icon span:nth-child(2) {
+		transform: rotate(45deg);
+	}
+	  
+	.menu.menu_state_open  .menu-icon span:nth-child(3) {
+		transform: rotate(-45deg);
+	}
+	  
+	.menu.menu_state_open  .menu-icon span:nth-child(4) {
+		top: 18px;
+		width: 0%;
+		left: 50%;
+	}
+	  
+	.menu.menu_state_open .menu-links {
+		display: block;  
+	}
+}
+
+.sent-request {
+	.head-logo {
+		position: relative;
+		top: 80px;
+		left: 10px;
+		width: 106%;
+	}
+	form {
+		top: 145px;
+		left: -25px;
+	}
+}
+
+.our-requirement {
+	margin-top: 260px;
+	position: relative;
+	.left-elipse-img {
+		position: absolute;
+		top: -165px;
+		left: -15px;
+	}
+	.requirement-elm {
+		width: 199px;
+		height: 204px;
+		border-radius: 7px;
+		-webkit-box-shadow: 0px 0px 15px 5px rgba(199,199,199,0.47);
+		-moz-box-shadow: 0px 0px 15px 5px rgba(199,199,199,0.47);
+		box-shadow: 0px 0px 15px 5px rgba(199,199,199,0.47);
+		background-color: #fafafa;
+		line-height: 14px;
+		padding: 0 17px;
+		margin: auto;
+		margin-top: 65px;
+		.img {
+			text-align: center;
+			padding-top: 25px;
+			height: 120px;
+		}
+		.descript {
+			font-size: 10px;
+			color: #272f2f;
+		}
+	}
+}
+
+.help {
+	margin-top: 85px;
+	height: 630px;
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		background: #1da992;
+		width: 100%;
+		height: 630px;
+	}
+	.help-icon {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	.title {
+		color: #ffffff;
+		padding: 15px 0px 50px 15px;
+	}
+	.contain {
+		.item {
+			position: relative;
+			color: #ffffff;
+			font-weight: 600;
+			&:nth-child(2n) {
+				margin-left: 75px;
+			}
+			&:not(:last-child) {
+				padding-bottom: 75px;
+			}
+			.number {
+				position: absolute;
+				left: 0;
+				top: 0;
+				.numeric, .dot {
+					font-size: 46px;
+					line-height: 1;
+				}
+			}
+			.description {
+				line-height: 18px;
+				text-transform: uppercase;
+				font-size: 12px;
+				padding-left: 70px;
+			}
+		}
+	}
+}
+
+.we-offer {
+	position: relative;
+	padding-top: 50px;
+	.right-ellipse {
+		position: absolute;
+		right: 0px;
+		top: 85px;
+	}
+	.item {
+		text-align: center;
+		font-weight: 600;
+		margin-top: 60px;
+		svg {
+			width: 50%;
+			fill: #04a58b;
+			cursor: pointer;
+			&:hover {
+				width: 60%;
+				fill: url(#my-cool-gradient);
+			}
+		}
+		.desc {
+			display: block;
+			padding-top: 10px;
+			line-height: 16px;
+		}
+	}
+}
+
+.contacts {
+	position: relative;
+	margin-top: 40px;
+	height: 607px;
+	.contacts-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 1090px;
+	}
+	.title {
+		margin-top: 145px;
+		margin-bottom: 70px;
+		color: #ffffff;
+	}
+	.title-contacts {
+		text-transform: uppercase;
+		font-size: 14px;
+		color: #ffffff;
+		font-weight: normal;
+	}	
+	form {
+		.input {
+			color: #ffffff;
+		}
+		.focus-input {
+			&:after {
+				color: #ffffff;
+				opacity: 0.5;
+			}
+		}
+	}
+	.info {
+		color: #ffffff;
+		font-size: 11px;
+		text-transform: uppercase;
+		margin-top: 45px;
+		span {
+			display: block;
+			line-height: 27px;
+		}
+	}
+	.soc-icon {
+		margin-top: 58px;
+		a {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: 40px;
+			svg {
+				width: 100%;
+				height: 100%;
+				fill: #04a58b;
+				&:hover {
+					fill: darken(#04a58b, 5%)
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+	font-size: 13px;
+	padding: 15px;
+}
+
 
 @import "media"; 
